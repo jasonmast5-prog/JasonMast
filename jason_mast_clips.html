@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jason Mast — Clips</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Source Serif 4', serif; background: #faf9f7; color: #1a1a1a; padding: 3rem 2rem; max-width: 900px; margin: 0 auto; }
+
+  .masthead { border-top: 3px solid #1a1a1a; border-bottom: 1px solid #ddd; padding: 1.25rem 0 1rem; margin-bottom: 0.5rem; }
+  .name { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 5px; }
+  .tagline { font-size: 12px; color: #666; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 300; }
+  .dateline { font-size: 11px; color: #999; letter-spacing: 0.06em; text-transform: uppercase; margin: 0.6rem 0 1.75rem; }
+
+  /* FEATURED */
+  .featured { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: 2rem; margin-bottom: 2rem; }
+  .divider-v { background: #ddd; }
+  .clip-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #999; font-weight: 300; margin-bottom: 8px; }
+  .clip-headline { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600; line-height: 1.3; margin-bottom: 9px; }
+  .clip-headline a { color: inherit; text-decoration: none; }
+  .clip-headline a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .clip-deck { font-size: 13.5px; line-height: 1.65; color: #555; font-weight: 300; font-style: italic; margin-bottom: 10px; }
+  .clip-meta { font-size: 11px; color: #999; display: flex; gap: 8px; align-items: center; }
+  .clip-outlet { color: #666; }
+  .sep { color: #ccc; }
+
+  /* GRID */
+  .section-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #999; font-weight: 300; border-top: 0.5px solid #ddd; padding-top: 10px; margin-bottom: 1.2rem; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: 2rem; margin-bottom: 2rem; }
+  .grid-item { border-top: 2px solid #1a1a1a; padding-top: 10px; }
+  .grid-item .clip-headline { font-size: 15px; }
+  .grid-item .clip-deck { font-size: 13px; }
+
+  /* LIST */
+  .list { display: flex; flex-direction: column; }
+  .list-item { display: flex; align-items: baseline; gap: 1rem; padding: 10px 0; border-bottom: 0.5px solid #e8e8e8; }
+  .list-item:first-child { border-top: 0.5px solid #e8e8e8; }
+  .list-num { font-size: 11px; color: #bbb; font-family: 'Playfair Display', serif; min-width: 20px; flex-shrink: 0; }
+  .list-content .clip-headline { font-size: 14px; margin-bottom: 3px; }
+  .list-content .clip-meta { margin-top: 3px; }
+
+  @media (max-width: 640px) {
+    body { padding: 1.5rem 1.2rem; }
+    .featured { grid-template-columns: 1fr; gap: 1.5rem 0; }
+    .divider-v { display: none; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="name">Jason Mast</div>
+  <div class="tagline">Reporter, STAT News &nbsp;·&nbsp; Genetic Medicine &nbsp;&amp;&nbsp; Rare Disease</div>
+</div>
+<div class="dateline">Selected clips &nbsp;·&nbsp; 2022–2026</div>
+
+<!-- FEATURED -->
+<div class="featured">
+  <div>
+    <div class="clip-label">Featured</div>
+    <div class="clip-headline"><a href="https://www.statnews.com/2025/10/30/moderna-rise-fall-biotech-analysis-from-pandemic-rise-to-mrna-crash/" target="_blank">How Moderna, the company that helped save the world, unraveled</a></div>
+    <div class="clip-deck">The inside story of how the mRNA giant went from $19.3 billion in pandemic-era revenues to an existential crisis — based on interviews with more than two dozen current and former employees.</div>
+    <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Oct. 2025</span></div>
+  </div>
+  <div class="divider-v"></div>
+  <div>
+    <div class="clip-label">Featured</div>
+    <div class="clip-headline"><a href="https://www.statnews.com/2025/02/06/crispr-gene-editing-medical-breakthrough-not-matched-by-financial-success/" target="_blank">The CRISPR gene editing revolution loses its mojo</a></div>
+    <div class="clip-deck">CRISPR was supposed to change medicine. But for all its public accolades, the revolution hasn't gone according to plan — a three-month investigation drawing on more than 75 interviews.</div>
+    <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Feb. 2025</span></div>
+  </div>
+</div>
+
+<!-- RECENT WORK -->
+<div class="section-label">Recent work</div>
+<div class="grid">
+  <div class="grid-item">
+    <div class="clip-headline"><a href="https://www.statnews.com/2026/04/08/duchenne-exon-skipping-breakthrough-one-mother-quest/" target="_blank">A mother's 20-year quest fuels a startling Duchenne breakthrough</a></div>
+    <div class="clip-deck">One family's journey from diagnosis to a trial that stunned experts.</div>
+    <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Apr. 2026</span></div>
+  </div>
+  <div class="grid-item">
+    <div class="clip-headline"><a href="https://www.statnews.com/2025/08/21/sarepta-gene-therapy-families-left-behind/" target="_blank">As Sarepta fights for its Duchenne therapy, a group of patients gets left behind</a></div>
+    <div class="clip-deck">Sarepta abandoned a near-decade of work on LGMD gene therapy, leaving families who'd waited years without options.</div>
+    <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Aug. 2025</span></div>
+  </div>
+  <div class="grid-item">
+    <div class="clip-headline"><a href="https://www.statnews.com/2025/01/09/virology-new-scientific-names-for-hiv-covid-19-in-updated-viral-taxonomy/" target="_blank">New scientific names for HIV, Covid virus raise hackles</a></div>
+    <div class="clip-deck">To impose order on a burgeoning viral world, taxonomists coined sweeping new names. Researchers were not happy.</div>
+    <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Jan. 2025</span></div>
+  </div>
+</div>
+
+<!-- MORE CLIPS -->
+<div class="section-label">More clips</div>
+<div class="list">
+
+  <div class="list-item">
+    <span class="list-num">01</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2025/05/15/crispr-gene-editing-landmark-first-ever-single-patient-genetic-fix-nejm-reports/" target="_blank">CRISPR is used in landmark treatment to correct genetic misspelling of a single patient</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>May 2025</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">02</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2026/02/26/rare-disease-treatment-approval-fda-mixed-messages/" target="_blank">Rare disease advocates perplexed by mixed messages at the FDA</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Feb. 2026</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">03</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2026/05/11/astellas-gene-therapy-trials-resume-promising-myotubular-myopathy-treatment/" target="_blank">Too risky to proceed, too beneficial to shelve: Astellas' XLMTM story</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>May 2026</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">04</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2025/12/15/gene-therapy-capsida-biotherapeutics-clinical-trial-death-ramifications/" target="_blank">Gene therapy trial death unnerves promising area of brain research</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Dec. 2025</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">05</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2025/07/28/als-treatment-before-symptoms-case-study-jeff-vierstra/" target="_blank">He took an ALS drug before getting sick — and it may have worked</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Jul. 2025</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">06</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2023/07/31/gene-therapy-crisis-rare-disease-car-t/" target="_blank">Gene therapy is in crisis. For nine hours, the field's leading minds looked for a solution</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Jul. 2023</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">07</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2024/03/13/hemophilia-treatment-gene-therapy-use-of-hemgenix-roctavian/" target="_blank">How many hemophilia patients actually want gene therapy?</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Mar. 2024</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">08</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2024/12/09/pirovolakis-gene-therapy-rare-disease-spg50-lockard/" target="_blank">This father built a gene therapy for his son. Now comes the harder part: saving others' children, too.</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Dec. 2024</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">09</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2023/03/03/what-the-dogs-of-chernobyl-can-teach-us-about-life-at-the-edge/" target="_blank">What the dogs of Chernobyl can teach us about life at the edge</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Mar. 2023</span></div>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <span class="list-num">10</span>
+    <div class="list-content">
+      <div class="clip-headline"><a href="https://www.statnews.com/2022/12/19/new-drugs-for-sickle-cell-few-prescriptions/" target="_blank">We finally have new drugs for sickle cell disease. Why are so few patients taking them?</a></div>
+      <div class="clip-meta"><span class="clip-outlet">STAT News</span><span class="sep">·</span><span>Dec. 2022</span></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
